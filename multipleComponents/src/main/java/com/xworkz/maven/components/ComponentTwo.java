@@ -8,7 +8,7 @@ public class ComponentTwo implements Configuration {
 
     public ComponentTwo()
     {
-        System.out.println("Kya haal hai ");
+        System.out.println("Second component initialized ");
     }
     @Override
     public String value() {

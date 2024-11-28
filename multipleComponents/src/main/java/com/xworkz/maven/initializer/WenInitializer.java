@@ -2,6 +2,7 @@ package com.xworkz.maven.initializer;
 
 import com.xworkz.maven.components.ComponentOne;
 import com.xworkz.maven.components.ComponentTwo;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
@@ -26,7 +27,7 @@ public class WenInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{ComponentOne.class, ComponentTwo.class};
+        return new Class[]{ComponentOne.class};
     }
 
     @Override
@@ -34,6 +35,7 @@ public class WenInitializer extends AbstractAnnotationConfigDispatcherServletIni
         System.out.println("used to merge different servlet classes to fc servlet");
         return new String[]{"/"};
     }
+
 
 
 }
