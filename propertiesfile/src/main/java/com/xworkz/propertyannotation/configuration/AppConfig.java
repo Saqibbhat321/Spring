@@ -17,7 +17,7 @@ public class AppConfig {
 
     @Bean
     public String greeting() {
-        System.out.println("salam Habibi");
+        System.out.println("Salaam Habibi");
         return " greatings";
     }
 
