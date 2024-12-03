@@ -1,6 +1,7 @@
 package com.xworkz.propertyannotation.configuration;
 
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -25,6 +26,13 @@ public class AppConfig {
     public String famousCity() {
         System.out.println("Kulgam");
         return "city";
+    }
+    @Bean
+    @Qualifier("add")
+    public int Add()
+    {
+        System.out.println("add kar note");
+        return 1;
     }
 
 

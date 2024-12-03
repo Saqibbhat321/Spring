@@ -17,7 +17,8 @@ public class Hills {
     private String dbusername;
     @Value("${dbpassword}")
     private String dbpassword;
-    @Autowired
+    @Autowired // used to init , check the obj form spring container whether it is present or not
+                    
     @Qualifier("greeting")
     private String greet;
 
